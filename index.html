@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">    
+    <title>Arinka Travels</title>
+    <!-- css stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero">
+        <header>
+            <div class="nav">
+                <div class="nav-left">
+                    <img class="travel-logo" src="svg/arinka.svg" alt="Arinka logo">
+                    <span class="travel-name"> ARINKA </span>
+                </div>
+
+                <div class="nav-mid">
+                    <ul class="main-menu">
+                        <li>
+                            <a href="" title="">Locations</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Moods</a>
+                        </li>
+                        <li>
+                            <a href="" title="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <a class="reg-btn" href="">Login / Signup</a>
+                    <a class="mobile-trigger" id="mobile-trigger" style="border-radius: 1.6em; background-color: rgba(255, 255, 255, 0.2); color: #ffffff;font-weight: 700;padding: 4% 2.5em;text-transform: uppercase;text-decoration: none;">MENU</a>
+                    <ul class="mobile-menu" id="mobile-menu">
+                        <li>
+                            <a class ="m-a" href="" title="">Locations</a>
+                        </li>
+                        <li>
+                            <a href="" class="m-a" title="">Moods</a>
+                        </li>
+                        <li>
+                            <a href="" class="m-a" title="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="hero-text">
+            <h1 class="hero-headline">
+                Discover the best places <br>to travel in Nigeria
+            </h1>
+            <p class="hero-question">What type of adventure are you looking for?</p>
+        </div>
+        <input class="search-box" type="text" placeholder="e.g educational, outdoors, relaxed">
+    </section>
+    <section class="about-us">
+        <p class="about-us-title">ABOUT ARINKA</p>
+        <p class="about-us-content"> Arinka is a fictional company, but actually a real idea someone had sometime in the past.
+            In 1985 Aldus Corporation launched its first desktop publishing program Aldus PageMaker
+            for Apple Macintosh computers, released in 1987 for PCs running Windows 1.0. Both 
+            contained the variant lorem ipsum most common today.
+        </p>
+    </section>
+    <section class="locations">
+        <div class="location-images">
+            <div class="location-container">
+                <a href="">
+                    <div class="location-image location-image-1">
+                        <div class="location-info">
+                            <h3>Bauchi Park</h3>
+                            <span>Relaxed holiday for two</span>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="location-container">
+                <a href="">
+                    <div class="location-image location-image-2">
+                        <div class="location-info">
+                            <h3>Jos, Plateau</h3>
+                            <span>Experience Nigeria in the 60s</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="location-container">
+                <a href="">
+                    <div class="location-image location-image-3">
+                        <div class="location-info">
+                            <h3>Abuja Car Racing</h3>
+                            <span>Get Your Adrenaline Pumping</span>
+                        </div>
+                    </div>  
+                </a>    
+            </div>
+        </div>
+        
+        <div class="see-more-con">
+            <a class="see-more-btn">SEE MORE</a>
+        </div>
+    </section>
+    <section class="hanging-out">
+        <div class="hanging-out-info">
+            <span>ON THE BLOG</span>
+            <h3>Hanging out <br>in Borno</h3>
+        </div>
+    </section>
+    <footer>
+        <div class="t-and-c">
+            <a>Terms and Conditions</a>
+        </div>
+        <div class="copy-front">
+            <a>Copyright Frontstack, 2017</a>
+        </div>
+    </footer>
+
+    <script>
+        var mobileMenuHidden = true;
+        var trigger = document.getElementById('mobile-trigger');
+        var menu = document.getElementById('mobile-menu');
+
+        trigger.addEventListener("click", function() {
+            if (mobileMenuHidden) {
+                trigger.classList.add("is-active");
+                menu.style.display = "block";
+            } else {
+                trigger.classList.remove("is-active");
+                menu.style.display = "none";
+            }
+            mobileMenuHidden = !mobileMenuHidden;
+        });
+    </script>
+</body>
+
+</html>

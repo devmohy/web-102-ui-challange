@@ -1,0 +1,552 @@
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+div.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+/* Nav */
+header {
+  height: 70px;
+  padding-top: 10px;
+}
+
+header .nav {
+  display: block;
+  padding: 0 2.5%;
+}
+
+header .nav .nav-left {
+  float: left;
+  display: flex;
+}
+
+header .nav .nav-mid {
+  display: none;
+}
+
+header .nav .nav-right {
+  float: right;
+  padding-top: 5px;
+}
+
+header .nav .nav-right .reg-btn{
+  display: block;
+  border-radius: 1.6em;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 4% 2.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .nav .nav-right .m-a{
+  display: block;
+  border-radius: 1.6em;
+  background-color:none;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 4% 2.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .nav .nav-right a:hover {
+  color: #EB5757;
+}
+
+header .nav .nav-right a.reg-btn {
+  display: none;
+}
+
+.mobile-menu {
+  margin: 0;
+  background-image:
+  linear-gradient(
+          #EB5757, #E38551
+  );
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.05);
+  display: none;
+  left: 10px;
+  padding: 10px 20px 10px;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 100%;
+}
+
+.mobile-menu li {
+  text-align: right;
+  list-style-type: none;
+  color: #fff;
+}
+
+img.travel-logo {
+  max-width: 30px;
+}
+
+.travel-name {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  padding-left: 0.5em;
+  margin-top: 0.8em;
+}
+
+.register-button {
+  border-radius: 25px;
+  font-size: 14px;
+  line-height: 23px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  padding: 2% 6% 2% 6%;
+  width: 175px;
+  height: 45px;
+  float: right;
+}
+
+
+section.hero {
+  height: 20em;
+  position: relative;
+  background-image:
+      linear-gradient(
+              #EB5757, #D59152
+      );
+}
+
+section.hero .hero-text {
+  margin-top: 3em;
+  text-align: center;
+  color: #fff;
+}
+
+section.hero .hero-text h1.hero-headline {
+  font-weight: 900;
+  font-size: 2em;
+  line-height: 1em;
+  margin: 1em;
+}
+
+section.hero .hero-text h1.hero-headline br {
+  display: none;
+}
+
+section.hero .hero-text p.hero-question {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 1.3;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.search-box {
+  position: absolute;
+  display: block;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0.8em;
+  width: 80%;
+  border-radius: 50px;
+  border: solid #F2994A;
+  text-align: center;
+  font-size: 0.8em;
+  color: #c8c0c0;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+  outline: none;
+}
+
+/* About Arinka */
+
+section.about-us {
+  margin-top: 10%;
+}
+
+.about-us .about-us-title {
+  color: #c3c1c1;
+  text-align: center;
+  padding-top: 3em;
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+
+.about-us .about-us-content {
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0 15%;
+  margin-top: 5%;
+}
+
+
+
+
+/* Locations */
+
+section.locations {
+  margin-top: 10%;
+}
+
+.location-images {
+  margin-bottom: 50px;
+}
+
+.location-container {
+  width: 80%;
+  height: 20em;
+  margin: 5% auto;
+  display: block;
+  text-align: left;
+}
+
+.location-container .location-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2em;
+}
+
+header .nav .nav-right a .m-a{
+  background-color: none !important;
+}
+.location-image::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.2em;
+}
+
+.location-image-1 {
+  background-image: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_600/v1512090824/manuel-moreno-39516_wmwzl0.jpg');
+}
+
+.location-image-2 {
+  background: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_600/v1512072883/nitin-garg-327400_equo2e.jpg');
+}
+
+.location-image-3 {
+  background: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_1000/v1512072407/gabriel-gurrola-125352_i1hpwr.jpg');
+}
+
+.location-image .location-info {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+.location-image .location-info h3 {
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 0.1em;
+  line-height: 1;
+}
+.location-image .location-info span {
+  display: block;
+  color: #D78E52;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.see-more-con {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.see-more-btn {
+  border: 2px solid #E36F55;
+  border-radius: 50px;
+  color: #E36F55;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.7em 3em;
+  cursor: pointer;
+}
+
+
+/* Hanging Out */
+
+section.hanging-out {
+  width: 100%;
+  height: 20em;
+  background-image: url('http://res.cloudinary.com/do52uumgy/image/upload/c_scale,w_800/v1512084945/charlie-costello-301722_batyzg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.hanging-out-info {
+  height: 100%;
+  padding: 15%;
+  position: relative;
+  text-align: center;
+}
+.hanging-out-info:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(227, 126, 85, 0.5);
+  -webkit-backface-visibility: hidden;
+  z-index: -1;
+}
+.hanging-out-info span {
+  color: #FFF;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.hanging-out-info h3 {
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1;
+  margin: 15px 0;
+}
+.hanging-out-info h3 br {
+  display: none;
+}
+
+/* Footer */
+
+.t-and-c {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 1em;
+}
+
+.copy-front {
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #a9a9a9;
+  text-align: center;
+  padding: 1em;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width: 600px) {
+  section.hero {
+      height: 30em;
+  }
+
+  section.hero .hero-text {
+      margin-top: 4em;
+  }
+
+  section.hero .hero-text h1.hero-headline {
+      font-size: 4em;
+      line-height: 1em;
+  }
+
+  section.hero .hero-text p.hero-question {
+      font-weight: 500;
+      font-size: 1.5em;
+      margin: 3em auto;
+  }
+
+  .search-box {
+      bottom: -8%;
+      padding: 1.1em 0.8em;
+      width: 50%;
+      font-size: 1em;
+  }
+
+  .travel-name {
+      margin-top: 1.5em;
+  }
+
+
+  /* Locations */
+  section.locations {
+      margin-top: 5%;
+  }
+
+  .location-container {
+      width: 25%;
+      height: 20em;
+      margin: 2%;
+      display: inline-block;
+  }
+
+  div.location-images {
+      width: 100%;
+      text-align: center;
+  }
+
+
+  footer {
+      padding: 2em;
+  }
+
+  .t-and-c {
+      font-weight: 700;
+      font-size: 0.9em;
+      color: #a9a9a9;
+      float: left;
+  }
+  
+  .copy-front {
+      font-weight: 700;
+      font-size: 0.9em;
+      color: #a9a9a9;
+      float: right;
+  }
+
+  section.hanging-out {
+      height: 30em;
+  }
+
+  .hanging-out-info {
+      float: left;
+      background: linear-gradient(105deg, #e36e55 50%, transparent 50%);
+      height: 100%;
+      padding: 15% 0% 10% 8%;
+      position: relative;
+      text-align: left;
+  }
+
+  .hanging-out-info:after {
+      content: '';
+      position: absolute;
+      right: 30px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(100deg, #e36e55 0%, #D78F52 100%, transparent 50%);
+      -webkit-transform: skewX(-20deg);
+      -moz-transform: skewX(-20deg);
+      -ms-transform: skewX(-20deg);
+      -o-transform: skewX(-20deg);
+      transform: skewX(-20deg);
+      -webkit-backface-visibility: hidden;
+      z-index: -1;
+  }
+
+  .hanging-out-info h3 br {
+      display: block;
+  }
+
+  .hanging-out-info span {
+      color: #FEBE61;
+      font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header .nav {
+      display: flex;
+  }
+
+  header .nav .nav-mid {
+      /*float: left;*/
+      display: block;
+      margin: 0 auto;
+  }
+
+  ul.main-menu {
+      list-style-type: none;
+      margin: 0;
+  }
+
+  ul.main-menu li {
+      color: #fff;
+      display: inline-block;
+      padding-right: 1em;
+  }
+
+  ul.main-menu li a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 15px;
+      font-weight: 700;
+  }
+
+  header .nav .nav-right a.reg-btn {
+      display: block;
+  }
+
+  header .nav .nav-right .mobile-trigger, header .nav .nav-right .mobile-menu {
+      display: none;
+  }
+
+  section.hero .hero-text p.hero-question {
+      margin-top: 3em;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  section.hero .hero-text h1.hero-headline br {
+      display: block;
+  }
+
+  .hanging-out-info {
+      float: left;
+      background: linear-gradient(105deg, #e36e55 50%, transparent 50%);
+      height: 100%;
+      padding: 10% 0% 10% 8%;
+      position: relative;
+      text-align: left;
+  }
+
+  .hanging-out-info:after {
+      content: '';
+      position: absolute;
+      right: 30px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(100deg, #e36e55 0%, #D78F52 100%, transparent 50%);
+      -webkit-transform: skewX(-20deg);
+      -moz-transform: skewX(-20deg);
+      -ms-transform: skewX(-20deg);
+      -o-transform: skewX(-20deg);
+      transform: skewX(-20deg);
+      -webkit-backface-visibility: hidden;
+      z-index: -1;
+  }
+
+
+}
